@@ -10,14 +10,13 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
-    public function sampleFunction(int $a, int $b = null): array
+        public function sampleFunction(int $a, int $b = null): array
     {
-        if ($a === $b) {
-             return [$a, $b]; // Comment
+        if ($a === $b) {             return [$a, $b]; // Comment
         } elseif ($a > $b) {
             return [$a];
-        } else {
+        } else
             return [];
-        }
+
     }
 }

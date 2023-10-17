@@ -22,6 +22,8 @@ profile:
 #Specify Qodana linter for analysis (Applied in CI/CD pipeline)
 rules:
   php:
+    enabled: true
+    severity: MAJOR
     psr-12:
       enabled: true
 linter: jetbrains/qodana-php:latest
